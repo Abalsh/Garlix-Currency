@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Main Custom styles for the website  -->
     <link href="css\main.css" rel="stylesheet">
+    <link href="css\fiatcrypto.css" rel="stylesheet">
   </head>
   <body class="text-center" background="img\background.jpg">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -32,19 +33,16 @@
     <br> <br> <br>
     <div class="card">
       <div class="card-body">
-        <div class="form-group">
-          <label for="FormControlSelect1">Convert From</label>
-          <br>
-            <select class="form-control" id="FormControlSelect1">
-              <option>USD</option>
-              <option>EUR</option>
-              <option>CHF</option>
-              <option>NOK</option>
-              <option>GBP</option>
-              <option>AED</option>
-              <option>SEK</option>
-                </select>
-          </div>
+        <select class="mdb-select md-form">
+          <option value="" disabled selected>Choose your option</option>
+          <option>USD</option>
+          <option>EUR</option>
+          <option>CHF</option>
+          <option>NOK</option>
+          <option>GBP</option>
+          <option>AED</option>
+          <option>SEK</option>
+        </select>
         <input type="number" class="form-control form-control-lg mx-3" value="">
           <div class="form-group">
             <br> <br>
