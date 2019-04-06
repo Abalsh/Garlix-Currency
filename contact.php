@@ -1,4 +1,3 @@
-<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,10 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Main Custom styles for the website  -->
-    <link href="css\main.css" rel="stylesheet">
-    <link href="css\subscribe.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
   </head>
-  <body class="text-center" background="img\background.jpg">
+  <body class="text-center" background="img/background.jpg">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
@@ -36,37 +35,23 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                  <h2 class="title">Subscription Info</h2>
+                  <h2 class="title">Contact Us</h2>
                   <br>
-                  <p class="paragraph">Subscribe to our Newsletter to get more information about fiat and crypto currencies. By subscribing to us, you will be receiving everyday five main news article stories to get updated on what is going on in the currency world.</p>
-                  <br> 
-                    <form method="POST">
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate (YYYY-MM-DD)" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Email" name="email">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
-                        </div>
-                        <div class="btn">
-                            <button class="btn btn--pill" type="submit">Submit</button>
-                        </div>
+                  <p id="contact-left">Get in-touch with us.</p> 
+                    <form id="form" class="topBefore">
+                    <div class="input-group">
+                         <input id="name" type="text" placeholder="NAME">
+                    </div>
+                    <div class="input-group">
+                         <input id="email" type="text" placeholder="E-MAIL">
+                    </div>
+                    <div class="input-group">
+                         <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                    </div>
+                    <div class="input-group">
+                         <input id="submit" type="submit" value="Submit">
+                    </div>
+                    
                     </form>
                 </div>
             </div>

@@ -14,9 +14,9 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background: #85bb65;
-    width: 960px;
-    height: 700px;  
+    background: #645394;
+    width: 720px;
+    height: 550px;  
     position: relative;
     margin:0 auto;
     line-height: 1.4em;
@@ -68,20 +68,23 @@
   .input--style-3 {
     padding: 5px 0;
     font-size: 16px;
-    color: #ccc;
+    color: #fff;
     background: transparent;
     border: 1px;
   }
   
   .input--style-3::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #ccc;
+    color: #fff;
   }
   
   .input--style-3:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #ccc;
+    color: #fff;
     opacity: 1;
   }
   
+  .paragraph{
+    text-align: left;
+  }
   

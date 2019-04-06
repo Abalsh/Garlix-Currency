@@ -1,4 +1,3 @@
-<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -23,9 +22,9 @@
       <h3 class="masthead-brand">XCHANGE</h3>
       <nav class="nav nav-masthead justify-content-center">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="fiat.html">Fiat</a>
+        <a class="nav-link active" href="currency.php">Currency</a>
         <a class="nav-link" href="crypto.html">Crypto</a>
-        <a class="nav-link" href="charts.html">Charts</a>
+        <a class="nav-link" href="contact.php">Contact</a>
         <a class="nav-link" href="subscribe.html">Subscribe</a>
       </nav>
     </div>

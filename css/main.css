@@ -61,11 +61,11 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-color: #85bb65;
+color: #645394;
 }
 
 .nav-masthead .active {
-  background-color: #85bb65;
+  background-color: #645394;
   color: #fff;
   border-radius: 1px;
 }
