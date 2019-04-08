@@ -9,11 +9,12 @@
         <!-- Connecting with Google Material for websit's logo/icon autorenew-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Setting up BootstrapCDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Main Custom styles for the website  -->
         <link href="css\main.css" rel="stylesheet">
-        @if(\Request::is('contact')) <link href="css\contact.css" rel="stylesheet"> @endif
+        @if(\Request::is('contact')) <link href="css\contact.css" rel="stylesheet">  @endif
         @if(\Request::is('crypto'))<link href="css\crypto.css" rel="stylesheet"> @endif
         @if(\Request::is('subscribe')) <link href="css\subscribe.css" rel="stylesheet"> @endif
      </head>

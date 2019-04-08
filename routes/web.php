@@ -31,3 +31,7 @@ Route::get('/crypto', function () {
     return view('crypto');
 });
 
+
+Route::get('/contact', 'SendEmailController@index');
+
+Route::post('/contact/send', 'SendEmailController@send');
