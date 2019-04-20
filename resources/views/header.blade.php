@@ -16,6 +16,7 @@
         <link href="css\main.css" rel="stylesheet">
         @if(\Request::is('contact')) <link href="css\contact.css" rel="stylesheet">  @endif
         @if(\Request::is('crypto'))<link href="css\crypto.css" rel="stylesheet"> @endif
+        @if(\Request::is('currency'))<link href="css\crypto.css" rel="stylesheet"> @endif
         @if(\Request::is('subscribe')) <link href="css\subscribe.css" rel="stylesheet"> @endif
      </head>
   <body class="text-center" background="img\background.jpg">
