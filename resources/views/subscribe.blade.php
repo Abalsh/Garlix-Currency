@@ -36,35 +36,30 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                  <h2 class="title">Subscription Info</h2>
+                    @if (Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                        @if (Session::has('failure'))
+                            <div class="alert alert-danger" role="alert">
+                                {{ session('failure') }}
+                            </div>
+                        @endif
+                  <h2 class="title">Subscribe to our newsletter!</h2>
                   <br>
                   <p class="paragraph">Subscribe to our Newsletter to get more information about fiat and crypto currencies. By subscribing to us, you will be receiving everyday five main news article stories to get updated on what is going on in the currency world.</p>
                   <br> 
-                    <form method="POST">
+                    <form action={{url('/subscribe/newsletter')}}  method="POST">
+                        {{csrf_field()}}
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Name" name="name">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate (YYYY-MM-DD)" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="input-group">
                             <input class="input--style-3" type="email" placeholder="Email" name="email">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
-                        </div>
                         <div class="btn">
+
                             <button class="btn btn--pill" type="submit">Submit</button>
                         </div>
                     </form>

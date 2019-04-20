@@ -9,8 +9,8 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
@@ -60,6 +60,7 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\Newsletter\\' => 18,
         ),
         'R' => 
         array (
@@ -110,6 +111,7 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         ),
         'D' => 
         array (
+            'DrewM\\MailChimp\\' => 16,
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
@@ -225,6 +227,10 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\Newsletter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-newsletter/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -292,6 +298,10 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
+        ),
+        'DrewM\\MailChimp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drewm/mailchimp-api/src',
         ),
         'Dotenv\\' => 
         array (
@@ -482,6 +492,9 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         'Dotenv\\Regex\\Result' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Regex/Result.php',
         'Dotenv\\Regex\\Success' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Regex/Success.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'DrewM\\MailChimp\\Batch' => __DIR__ . '/..' . '/drewm/mailchimp-api/src/Batch.php',
+        'DrewM\\MailChimp\\MailChimp' => __DIR__ . '/..' . '/drewm/mailchimp-api/src/MailChimp.php',
+        'DrewM\\MailChimp\\Webhook' => __DIR__ . '/..' . '/drewm/mailchimp-api/src/Webhook.php',
         'Egulias\\EmailValidator\\EmailLexer' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailLexer.php',
         'Egulias\\EmailValidator\\EmailParser' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailParser.php',
         'Egulias\\EmailValidator\\EmailValidator' => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator/EmailValidator.php',
@@ -3179,6 +3192,12 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\Newsletter\\Exceptions\\InvalidNewsletterList' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/Exceptions/InvalidNewsletterList.php',
+        'Spatie\\Newsletter\\Newsletter' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/Newsletter.php',
+        'Spatie\\Newsletter\\NewsletterFacade' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterFacade.php',
+        'Spatie\\Newsletter\\NewsletterList' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterList.php',
+        'Spatie\\Newsletter\\NewsletterListCollection' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterListCollection.php',
+        'Spatie\\Newsletter\\NewsletterServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterServiceProvider.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',
