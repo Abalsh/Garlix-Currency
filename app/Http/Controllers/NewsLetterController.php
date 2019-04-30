@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-use Spatie\Newsletter\Newsletter;
+use Spatie\Newsletter\NewsletterFacade as Newsletter;
 
 class NewsLetterController extends Controller
 {

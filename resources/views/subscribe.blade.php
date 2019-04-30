@@ -36,12 +36,12 @@
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    @if (Session::has('success'))
+                    @if (session('success'))
                         <div class="alert alert-success" role="alert">
                             {{ session('success') }}
                         </div>
                     @endif
-                        @if (Session::has('failure'))
+                        @if (session('failure'))
                             <div class="alert alert-danger" role="alert">
                                 {{ session('failure') }}
                             </div>
