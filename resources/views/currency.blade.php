@@ -9,27 +9,33 @@
       <form>
         <select class="form-control" id="FormControlSelect1">
           @foreach ($currencies as $item)
-            <option class="color" value="{{ $item->ID }}">{{ $item->name }} - {{ $item->iso }}</option>
+            <option class="color" id="first" value="{{ $item->rates }}">{{ $item->name }} - {{ $item->iso }}</option>
           @endforeach
         </select>
       
-      <input type="number" class="form-control form-control-lg mx-3" value="">
+      <input type="number" id="num" class="form-control form-control-lg mx-3" value="3">
       <br> <br>
-          <select class="form-control" id="FormControlSelect1">
+          <select class="form-control" id="FormControlSelect2">
             @foreach ($currencies as $item)
-              <option class="color" value="{{ $item->ID }}">{{ $item->name }} - {{ $item->iso }}</option>
+              <option class="color" id="second" value="{{ $item->rates }}">{{ $item->name }} - {{ $item->iso }}</option>
             @endforeach
           </select>
-       <input type="number" class="form-control form-control-lg mx-3" value="">
+       <input type="number" id="rez" value="" class="form-control form-control-lg mx-3" value="">
       <br> <br>
-        <button class="btn btn--pill" type="submit">Convert!</button>
+        <button class="btn btn--pill" type="submit" onclick="myFunction()">Convert!</button>
       </form>
       </div>
     </div>
   </div>
 
-  <script>
-    
+  <script type="text/javascript">
+      var value = document.getElementById("num").value;
+      var first = document.getElementById("first").value;
+      var second = document.getElementById("second").value;
+      function myFunction() {
+        rez = valuesecond;
+        alert(rez);
+      }
   </script>
 
   @include('footer')
