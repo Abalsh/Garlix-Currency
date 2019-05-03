@@ -17,7 +17,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
-    'App\\Http\\Controllers\\NewsLetterController' => $baseDir . '/app/Http/Controllers/NewsLetterController.php',
+    'App\\Http\\Controllers\\NewsletterController' => $baseDir . '/app/Http/Controllers/NewsLetterController.php',
     'App\\Http\\Controllers\\SendEmailController' => $baseDir . '/app/Http/Controllers/SendEmailController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
