@@ -49,8 +49,19 @@
                         @endif
                     <h2 class="title">Subscribe to our newsletter!</h2>
                     <br>
+                    @if(count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <ul>
+                         @foreach ($errors->all() as $error)
+                         <li>{{ $error }}</li>
+                        @endforeach
+                        </ul>
+                   </div>
+                @endif
                     <p class="paragraph">Subscribe to our Newsletter to get more information about fiat and crypto currencies. By subscribing to us, you will be receiving everyday five main news article stories to get updated on what is going on in the currency world.</p>
                     <br>
+
                     <form action={{url('/subscribe')}}  method="post">
                         @csrf
                         <div class="input-group">

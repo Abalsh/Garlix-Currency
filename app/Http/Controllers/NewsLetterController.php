@@ -14,6 +14,9 @@ class NewsletterController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'email' => 'required|email',
+        ]);
         if ( ! Newsletter::isSubscribed($request->email) )
         {
             Newsletter::subscribePending($request->email);
