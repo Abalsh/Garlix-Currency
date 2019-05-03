@@ -1,6 +1,7 @@
+
 <!Doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Currency Exchange Website">
@@ -14,47 +15,44 @@
     <!-- Main Custom styles for the website  -->
     <link href="css\main.css" rel="stylesheet">
     <link href="css\subscribe.css" rel="stylesheet">
-  </head>
-  <body class="text-center" background="img\background.jpg">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <i class="material-icons masthead-brand img-fluid">autorenew</i>
-      <h3 class="masthead-brand">XCHANGE</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href='/'>Home</a>
-        <a class="nav-link" href='/currency'>Currnecy</a>
-        <a class="nav-link" href='/crypto'>Crypto</a>
-        <a class="nav-link" href='/contact'>Contact</a>
-        <a class="nav-link active" href='/subscribe'>Subscribe</a>
-      </nav>
-    </div>
-  </header>
+</head>
+<body class="text-center" background="img\background.jpg">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <i class="material-icons masthead-brand img-fluid">autorenew</i>
+            <h3 class="masthead-brand">XCHANGE</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href='/'>Home</a>
+                <a class="nav-link" href='/currency'>Currnecy</a>
+                <a class="nav-link" href='/crypto'>Crypto</a>
+                <a class="nav-link" href='/contact'>Contact</a>
+                <a class="nav-link active" href='/subscribe'>Subscribe</a>
+            </nav>
+        </div>
+    </header>
     <br> <br>
     <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
         <div class="wrapper wrapper--w780">
             <div class="card card-3">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    @if (Session::has('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-                        @if (Session::has('failure'))
-                            <div class="alert alert-danger" role="alert">
-                                {{ session('failure') }}
-                            </div>
+                        @if (\Session::has('success'))
+                            <div class="alert alert-success">
+                                <p>{{ \Session::get('success') }}</p>
+                            </div><br />
                         @endif
-                  <h2 class="title">Subscribe to our newsletter!</h2>
-                  <br>
-                  <p class="paragraph">Subscribe to our Newsletter to get more information about fiat and crypto currencies. By subscribing to us, you will be receiving everyday five main news article stories to get updated on what is going on in the currency world.</p>
-                  <br> 
-                    <form action={{url('/subscribe/newsletter')}}  method="POST">
-                        {{csrf_field()}}
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
-                        </div>
+                        @if (\Session::has('failure'))
+                            <div class="alert alert-danger">
+                                <p>{{ \Session::get('failure') }}</p>
+                            </div><br />
+                        @endif
+                    <h2 class="title">Subscribe to our newsletter!</h2>
+                    <br>
+                    <p class="paragraph">Subscribe to our Newsletter to get more information about fiat and crypto currencies. By subscribing to us, you will be receiving everyday five main news article stories to get updated on what is going on in the currency world.</p>
+                    <br>
+                    <form action={{url('/subscribe')}}  method="post">
+                        @csrf
                         <div class="input-group">
                             <input class="input--style-3" type="email" placeholder="Email" name="email">
                         </div>
@@ -69,9 +67,9 @@
     </div>
     <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Develeoped and Designed by <a href="#">&#169;Garlix</a>.</p>
+            <p>Develeoped and Designed by <a href="#">&#169;Garlix</a>.</p>
         </div>
-      </footer>
-    </div>
-    </body>
-    </html>
+    </footer>
+</div>
+</body>
+</html>

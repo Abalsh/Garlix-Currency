@@ -10,3 +10,11 @@ Requirements
 3. Create a copy of your .env file (cp .env.example .env)
 4. Generate an app encryption key (php artisan key:generate)
 5. Run the server (php artisan serve)
+
+Dependencies
+----------
+composer require spatie/laravel-newsletter
+composer require guzzlehttp/guzzle
+
+php artisan config:cache
+php artisan config:clear

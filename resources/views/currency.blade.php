@@ -6,37 +6,68 @@
       <label for="FormControlSelect1">Convert From</label>
       <div class="input-group">
       <br>
-      <form>
-        <select class="form-control" id="FormControlSelect1">
+      <form action="/currency" method="GET">
+        <input type="number" id="Amount" name="Amount" class="form-control form-control-lg mx-3" value="">
+        <select class="form-control" id="From" name="From">
           @foreach ($currencies as $item)
-            <option class="color" id="first" value="{{ $item->rates }}">{{ $item->name }} - {{ $item->iso }}</option>
+            <option class="color" value="{{ $item->iso }}">{{ $item->name }} - {{ $item->iso }}</option>
           @endforeach
         </select>
-      
-      <input type="number" id="num" class="form-control form-control-lg mx-3" value="3">
       <br> <br>
-          <select class="form-control" id="FormControlSelect2">
+          <select class="form-control" id="To" name="To">
             @foreach ($currencies as $item)
-              <option class="color" id="second" value="{{ $item->rates }}">{{ $item->name }} - {{ $item->iso }}</option>
+              <option class="color" value="{{ $item->iso }}">{{ $item->name }} - {{ $item->iso }}</option>
             @endforeach
           </select>
-       <input type="number" id="rez" value="" class="form-control form-control-lg mx-3" value="">
       <br> <br>
-        <button class="btn btn--pill" type="submit" onclick="myFunction()">Convert!</button>
+       <span id="result" value=""></span>
+      <br> <br>
+        <button class="btn btn--pill" type="submit">Convert!</button>
       </form>
+      <?php
+    if( isset($_GET["Amount"])) 
+    {
+      $value = $_GET['Amount']; 
+      $one = $_GET['From'];
+      $two = $_GET['To'];
+      //$From = DB::table('currency')->where('iso', $_GET['From'])->pluck('rates'); 
+
+
+      //$From = DB::select('Select rates from currency')->where('iso', '=', "{$one}")->get();
+
+      $users = (DB::table('currency')->select('rates')->where('iso', '=', $one)->get())->pluck('rates');
+      $From = $users[0];
+
+      $renat = (DB::table('currency')->select('rates')->where('iso', '=', $two)->get())->pluck('rates');
+      $To = $renat[0];
+      //$from = DB::table('currency')
+                     //->select(DB::raw('count(*) as user_count, status'))
+                    // ->where('status', '<>', 1)
+                    // ->groupBy('status')
+                    // ->get();
+    
+      //$To = DB::table('currency')->where('iso', $_GET['To'])->pluck('rates');
+      #$To = DB::select('Select rates from currency')->where('iso', '=', "%{$two}%")->get();
+       $rez = ($value/$From) * $To;
+       echo $rez;
+       echo '<br>';
+      echo $value;
+      echo $From;
+      echo '<br>';
+      echo $To;
+    }
+    else{
+      echo 'Enter value';
+    }
+
+?>
       </div>
     </div>
   </div>
 
-  <script type="text/javascript">
-      var value = document.getElementById("num").value;
-      var first = document.getElementById("first").value;
-      var second = document.getElementById("second").value;
-      function myFunction() {
-        rez = valuesecond;
-        alert(rez);
-      }
-  </script>
+  
+ 
 
   @include('footer')
   @endsection
+ 
