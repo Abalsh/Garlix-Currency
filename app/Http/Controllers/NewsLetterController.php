@@ -3,28 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Newsletter;
 
-
-use Spatie\Newsletter\Newsletter;
-
-class NewsLetterController extends Controller
+class NewsletterController extends Controller
 {
-    //
-    function index()
+    public function create()
     {
         return view('subscribe');
     }
 
-    public function store(request $request){
-        if(! Newsletter::isSubscribed($request->email)){
-
+    public function store(Request $request)
+    {
+        if ( ! Newsletter::isSubscribed($request->email) )
+        {
             Newsletter::subscribePending($request->email);
-
-            return redirect('subscribe')->with('Success', 'Please check Email');
-
+            return redirect('subscribe')->with('success', 'Thanks For Subscribing! Check your Inbox!');
         }
+        return redirect('subscribe')->with('failure', 'Sorry! You have already subscribed ');
 
-    return redirect('subscribe')->with('Fail','Sorry,Already Subscribed!');
     }
-
 }

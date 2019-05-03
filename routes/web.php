@@ -40,6 +40,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/subscribe', 'NewsLetterController@index');
+Route::get('/subscribe', 'NewsLetterController@create');
 
-Route::post('/subscribe/newsletter', 'NewsLetterController@store');
+Route::post('/subscribe', 'NewsLetterController@store');
