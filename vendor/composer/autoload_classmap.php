@@ -9,6 +9,7 @@ return array(
     'App\\Admin' => $baseDir . '/app/Admin.php',
     'App\\Console\\Commands\\updatecrypto' => $baseDir . '/app/Console/Commands/updatecrypto.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\CryptoListing' => $baseDir . '/app/CryptoListing.php',
     'App\\CurrencyListing' => $baseDir . '/app/CurrencyListing.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',

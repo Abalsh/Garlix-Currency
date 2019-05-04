@@ -415,6 +415,7 @@ class ComposerStaticInitaaf7a2d0aa0540e4f74d52dc30d67caa
         'App\\Admin' => __DIR__ . '/../..' . '/app/Admin.php',
         'App\\Console\\Commands\\updatecrypto' => __DIR__ . '/../..' . '/app/Console/Commands/updatecrypto.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\CryptoListing' => __DIR__ . '/../..' . '/app/CryptoListing.php',
         'App\\CurrencyListing' => __DIR__ . '/../..' . '/app/CurrencyListing.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',

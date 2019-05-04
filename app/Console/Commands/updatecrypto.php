@@ -12,7 +12,7 @@ class updatecrypto extends Command
      *
      * @var string
      */
-    protected $signature = 'update:crypto';
+    protected $signature = 'up:crypto';
 
     /**
      * The console command description.
@@ -47,7 +47,7 @@ class updatecrypto extends Command
     
         $res = $client->request('GET', 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', [
             'query'        => [
-                'limit' => '100',
+                'limit' => '39',
                 'convert' => 'EUR'
             ],
             'Filter'    => ['data']

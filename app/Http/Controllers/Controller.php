@@ -15,7 +15,7 @@ class Controller extends BaseController
 class CryptoController extends Controller
 {
 
-    public function convert($convertFrom,$convertFromValue,$convertTo)
+    public static function convert($convertFrom,$convertFromValue,$convertTo)
     {
         $dbCryptoTable = 'crypto';
         $convertFromRate = DB::table($dbCryptoTable)->where('symbol', $convertFrom)->value('rate');
