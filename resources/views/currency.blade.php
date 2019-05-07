@@ -27,18 +27,21 @@
         <button class="btn btn--pill" type="submit">Convert!</button>
       </form>
       <?php
-        if( isset($_GET["From"])) 
+        if( isset($_GET["From"]) && isset($_GET["Amount"]) && isset($_GET["To"])) 
         {
-          $value = $_GET['Amount']; 
-                    
-          $arrFrom = (DB::table('currency')->select('rates')->where('iso', '=', $_GET['From'])->get())->pluck('rates');
-          $From = $arrFrom[0];
+          if (!empty($_GET["From"]) && !empty($_GET["Amount"]) && !empty($_GET["To"])){
 
-          $arrTo = (DB::table('currency')->select('rates')->where('iso', '=', $_GET['To'])->get())->pluck('rates');
-          $To = $arrTo[0];
-          
-          $rez = ($value/$From) * $To;
-          echo $rez;
+            $value = $_GET['Amount']; 
+                      
+            $arrFrom = (DB::table('currency')->select('rates')->where('iso', '=', $_GET['From'])->get())->pluck('rates');
+            $From = $arrFrom[0];
+
+            $arrTo = (DB::table('currency')->select('rates')->where('iso', '=', $_GET['To'])->get())->pluck('rates');
+            $To = $arrTo[0];
+            
+            $rez = ($value/$From) * $To;
+            echo $rez;
+          }
         }
       ?>
       </div>

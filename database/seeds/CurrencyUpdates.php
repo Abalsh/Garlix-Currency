@@ -23,6 +23,12 @@ class CurrencyUpdates extends Seeder
         
         $i = 0;
 
+        DB::table('currency')
+        ->updateOrInsert(
+            ['iso' => "EUR", 'name' => "Euro"],
+            ['rates' => 1]
+        );
+
         foreach($XMLContent as $line){ 
             if(preg_match("/currency='([[:alpha:]]+)'/",$line,$currencyCode)){ 
             if(preg_match("/rate='([[:graph:]]+)'/",$line,$rate)){ 
