@@ -14,7 +14,7 @@
           @endforeach
         </select>
       <br> 
-      <input type="button"  id="go" onclick="swapValues()" value="Swap">
+      <input type="button"  id="go" value="Swap">
       <br>
           <select class="form-control" id="To" name="To">
             @foreach ($currencies as $item)
@@ -47,6 +47,14 @@
       </div>
     </div>
   </div>
+
+  {{-- <script>
+    function swapValues(){
+        var tmp = document.getElementById("From").value;
+        document.getElementById("From").value = document.getElementById("To").value;
+        document.getElementById("To").value = tmp;
+      }
+  </script> --}}
 
     {{-- <script>
       function swapValues(){

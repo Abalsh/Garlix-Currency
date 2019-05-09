@@ -1,167 +1,65 @@
-{
-    "USD": [
-    {
-        "iso": "USD",
-        "rates": 1.12
-    }],
-    "JPY": [
-    {
-        "iso": "JPY",
-        "rates": 124.4
-    }],
-    "BGN": [
-    {
-        "iso": "BGN",
-        "rates": 1.96
-    }],
-    "CZK": [
-    {
-        "iso": "CZK",
-        "rates": 25.71
-    }],
-    "DKK": [
-    {
-        "iso": "DKK",
-        "rates": 7.47
-    }],
-    "GBP": [
-    {
-        "iso": "GBP",
-        "rates": 0.86
-    }],
-    "HUF": [
-    {
-        "iso": "HUF",
-        "rates": 323.38
-    }],
-    "PLN": [
-    {
-        "iso": "PLN",
-        "rates": 4.29
-    }],
-    "RON": [
-    {
-        "iso": "RON",
-        "rates": 4.76
-    }],
-    "SEK": [
-    {
-        "iso": "SEK",
-        "rates": 10.7
-    }],
-    "CHF": [
-    {
-        "iso": "CHF",
-        "rates": 1.1400000000000001
-    }],
-    "ISK": [
-    {
-        "iso": "ISK",
-        "rates": 136.6
-    }],
-    "NOK": [
-    {
-        "iso": "NOK",
-        "rates": 9.78
-    }],
-    "HRK": [
-    {
-        "iso": "HRK",
-        "rates": 7.41
-    }],
-    "RUB": [
-    {
-        "iso": "RUB",
-        "rates": 72.87
-    }],
-    "TRY": [
-    {
-        "iso": "TRY",
-        "rates": 6.66
-    }],
-    "AUD": [
-    {
-        "iso": "AUD",
-        "rates": 1.5899999999999999
-    }],
-    "BRL": [
-    {
-        "iso": "BRL",
-        "rates": 4.42
-    }],
-    "CAD": [
-    {
-        "iso": "CAD",
-        "rates": 1.5
-    }],
-    "CNY": [
-    {
-        "iso": "CNY",
-        "rates": 7.51
-    }],
-    "HDK": [
-    {
-        "iso": "HKD",
-        "rates": 8.75
-    }],
-    "IDR": [
-    {
-        "iso": "IDR",
-        "rates": 15901.45
-    }],
-    "ILS": [
-    {
-        "iso": "ILS",
-        "rates": 4.01
-    }],
-    "INR": [
-    {
-        "iso": "INR",
-        "rates": 77.26
-    }],
-    "KRW": [
-    {
-        "iso": "KRW",
-        "rates": 1305.08
-    }],
-    "MXN": [
-    {
-        "iso": "MXN",
-        "rates": 21.34
-    }],
-    "MYR": [
-    {
-        "iso": "MYR",
-        "rates": 4.62
-    }],
-    "NZD": [
-    {
-        "iso": "NZD",
-        "rates": 1.69
-    }],
-    "PHP": [
-    {
-        "iso": "PHP",
-        "rates": 57.86
-    }],
-    "SGD": [
-    {
-        "iso": "SGD",
-        "rates": 1.52
-    }],
-    "THB": [
-    {
-        "iso": "THB",
-        "rates": 35.72
-    }],
-    "ZAR": [
-    {
-        "iso": "ZAR",
-        "rates": 16.21
-    }],
-    "EUR": [
-    {
-        "iso": "EUR",
-        "rates": 1
-    }]
+{    
+    "USD":1.24,
+    
+    "BGN": 1.96,
+    
+    "CZK": 25.7,
+    
+    "DKK": 7.47,
+    
+    "GBP": 0.86,
+    
+    "HUF": 323,
+    
+    "PLN": 4.29,
+    
+    "RON": 4.76,
+    
+    "SEK": 10.7,
+    
+    "CHF": 1.1400000000000001,
+    
+    "ISK": 136,
+    
+    "NOK": 9.78,
+    
+    "HRK": 7.41,
+    
+    "RUB": 72.8,
+    
+    "TRY": 6.66,
+    
+    "AUD": 1.5899999999999999,
+    
+    "BRL": 4.42,
+    
+    "CAD": 1.5,
+
+    "CNY": 7.51,
+    
+    "HDK": 8.75,
+
+    "IDR": 1590,
+    
+    "ILS": 4.01,
+    
+    "INR": 77.2,
+    
+    "KRW": 1305,
+    
+    "MXN": 21.3,
+    
+    "MYR": 4.62,
+    
+    "NZD": 1.69,
+    
+    "PHP": 57.8,
+    
+    "SGD": 1.52,
+    
+    "THB": 35.7,
+    
+    "ZAR": 16.2,
+    
+    "EUR": 1
 }
