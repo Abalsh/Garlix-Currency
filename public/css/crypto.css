@@ -1,25 +1,16 @@
-input {
-    outline: none;
-    margin: 0;
-    border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    width: 100%;
-    font-size: 14px;
-    font-family: inherit;
-  }
-  
-  /* Spacing between forms*/
-  .input-group {
-    position: relative;
-    margin-bottom: 33px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 5px 0;
-    font-size: 16px;
-    color: #ccc;
-    background: transparent;
-    border: 1px;
-  }
+#color{
+    color: #3C1C78;
+}
 
-  
+input{
+    color: #3C1C78;
+}
+
+.col{
+    width: 250px;
+}
+
+.row{
+    margin: 0 auto;
+}
+

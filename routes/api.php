@@ -17,4 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("/", "API@index");
+Route::get("/crypto", "API@crypto");
+Route::get("/fiat", "API@fiat");
+
