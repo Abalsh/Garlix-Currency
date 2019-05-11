@@ -36,10 +36,11 @@
         @if(\Request::is('currency'))<link href="css\crypto.css" rel="stylesheet"> @endif
         @if(\Request::is('subscribe')) <link href="css\subscribe.css" rel="stylesheet"> @endif
         @if(\Request::is('crypto')) <script src="{{ URL::to('js/crypto.js') }}"></script> @endif
+  
 
-        
      </head>
-  <body class="text-center" background="img\background.jpg">
+    <body class="text-center" background="img\background.jpg">
+      
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
@@ -47,7 +48,9 @@
       <i class="material-icons masthead-brand img-fluid">autorenew</i>
       <h3 class="masthead-brand">XCHANGE</h3>
       </a>
+      
       <nav class="nav nav-masthead justify-content-center">
+        
         <a class="nav-link @if(\Request::is('/')) active @endif" href="/">Home</a>
         <a class="nav-link @if(\Request::is('currency')) active @endif" href='/currency'>Currency</a>
         <a class="nav-link @if(\Request::is('crypto')) active @endif" href='/crypto'>Crypto</a>

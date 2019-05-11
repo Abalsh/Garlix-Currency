@@ -8,7 +8,7 @@ $.ajax({
         var From_iso_value;
         var To_iso_value;
         var rez;
-        $('#Form').on("change",function(){
+        $('#Form').on("keyup change",function(){
             Amount = document.getElementById("Amount").value;
             From_iso_value = $("#From option:selected").attr('value'); 
             From = data[From_iso_value];
@@ -27,4 +27,32 @@ $.ajax({
 
     }
   });
+
+  $.noConflict();
+  function swapValues() {
+      var dropfrom = $("#From option:selected").attr('value'); 
+      var dropto = $("#To option:selected").attr('value'); 
+      
+
+      if (dropfrom != dropto){
+          $('#From option:selected').val(dropto).trigger('change');
+          $('#To option:selected').val(dropfrom).trigger('change');
+      }
+
+      var tmp = $('#From option:selected').text();
+      var tmpe = $('#To option:selected').text()
+
+      $('#From option:selected').html(tmpe)[0].innerHTML;
+      $('#To option:selected').html(tmp)[0].innerHTML;
+
+
+      $('#From select').selectpicker();
+      $('#To select').selectpicker();
+
+      // $('select[name=selValue1]').val(dropto);
+      // $('select[name=selValue2]').val(dropfrom);
+      $('.selectpicker').selectpicker('refresh');
+
+      console.log($('#From option:selected').html(tmpe)[0].innerHTML);
+  }
 

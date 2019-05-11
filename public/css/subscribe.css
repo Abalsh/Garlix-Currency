@@ -14,13 +14,14 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background: #645394;
+    background: #f8f4ff;
     width: 720px;
     height: 550px;  
     position: relative;
     margin:0 auto;
     line-height: 1.4em;
   }
+
   .card-3 .card-body {
     padding: 57px 65px;
     padding-bottom: 65px;
@@ -61,30 +62,49 @@
   .input-group {
     position: relative;
     margin-bottom: 33px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #3C1C78;
   }
   
   /* To make forms transparent */
   .input--style-3 {
     padding: 5px 0;
     font-size: 16px;
-    color: #fff;
+    color: #3C1C78;
     background: transparent;
     border: 1px;
   }
   
   .input--style-3::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #fff;
+    color: #3C1C78;
   }
   
   .input--style-3:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #fff;
+    color: #3C1C78;
     opacity: 1;
   }
   
+  @media all and (max-width: 1200px) { /* screen size until 1200px */
+    .paragrap {
+        font-size: 1.5em; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    .paragrap {
+        font-size: 1.2em; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    .paragrap {
+        font-size: 0.8em; /* 0.8x default size */
+        }
+    }
+
   .paragraph{
     text-align: left;
+    color: #3C1C78;
   }
-  
+  h2{
+    color: #3C1C78;
+  }

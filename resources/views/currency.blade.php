@@ -1,7 +1,7 @@
 @extends('header')
 
 @section('content')
-
+  
   <div class="card">
     <div class="card-body">
         <h3>
@@ -9,6 +9,7 @@
         </h3>
       <div class="input-group">
       <br>
+      <main role="main" class="inner cover">
       <form id="Form">
         <br>
         <input style="width: 250px;" type="number" placeholder="Enter Amount to Convert" step="0.01" min="0" id="Amount" class="form-control" value="1">
@@ -16,26 +17,23 @@
         <br>
         <div class="row from" >
             <div class="col">
-              <div id="select-from-container">
-              <select name="selValue1" class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
+              <select class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
                 @foreach ($currencies as $item)
                   <option  class="form-control" value="{{ $item->iso }}">{{ $item->name }} - {{ $item->iso }}</option>
                 @endforeach
               </select>
+          
             </div>
-            </div>
-      <button onclick="swapValues();" type="button" id="swap" style="background:none; border:none;"><i class="fa fa-exchange" style="font-size:36px; color: #3C1C78;"></i></button>
+      <button onclick="swapValues();" class="lead" type="button" id="swap" style="background:none; border:none;white-space: normal;"><i class="fa fa-exchange" style="font-size:36px; color: #3C1C78;"></i></button>
 
       <br>
       
       <div class="col to">
-          <div id="select-from-container">
-          <select name="selValue2" class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
+          <select  class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
             @foreach ($currencies as $item)
               <option class="form-control" value="{{ $item->iso }}" selected>{{ $item->name }} - {{ $item->iso }}</option>
             @endforeach
           </select>
-          </div>
         </div>
       </div>
       <br> <br> 
@@ -43,18 +41,18 @@
       <div class="row" style="padding-top: 10px;">
           <div class="col">
             
-      <blockquote class="blockquote">
-          <h2 class="mb-0" id="color"><span id="amount">1</span> <span id="from">USD</span></h2>
+      <blockquote class="blockquote up">
+          <h2 class="mb-0" id="color"><span id="amount" class="lead">1</span> <span id="from" class="lead">USD</span></h2>
       </blockquote>
           </div>
           <span  class="blockquote" id="mb-0" style="color: black;"> = </span>
           <div class="col">
-      <blockquote class="blockquote">
-          <h2 class="mb-0" id="color" style="margin-left: 20px;"><span id="rezult">0.89</span> <span id="to">EUR</span></h2>
+      <blockquote class="blockquote up">
+          <h2 class="mb-0" id="color" style="margin-left: 20px;"><span id="rezult" class="lead">0.89</span> <span id="to" class="lead">EUR</span></h2>
       </blockquote>
           </div>
       </div>
-      
+      </main>
       {{-- <h1 style="padding-top: 50px;" id="color">Amount:  <span id="amount"></span><span id="from"></span>:<span id="rezult"></span><span id="to"></span></h1> --}}
       <?php
         // if( isset($_GET["From"]) && isset($_GET["Amount"]) && isset($_GET["To"])) 

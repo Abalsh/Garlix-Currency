@@ -21,3 +21,8 @@ input{
 .border{
     border: solid 1px #cccccc;
 }
+
+.up{
+    position: relative;
+    bottom: 10px;
+}
