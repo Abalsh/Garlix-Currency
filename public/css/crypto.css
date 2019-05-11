@@ -14,3 +14,10 @@ input{
     margin: 0 auto;
 }
 
+.card{
+    background-color: #f8f4ff;
+}
+
+.border{
+    border: solid 1px #cccccc;
+}

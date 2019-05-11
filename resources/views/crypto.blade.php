@@ -16,8 +16,7 @@
         <br>
         <div class="row" >
             <div class="col">
-                <blockquote class="blockquote">
-              <select  class="selectpicker" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
+              <select  class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
                 @foreach ($cryptos as $item)
                   <option  class="form-control" value="{{ $item->symbol }}">{{ $item->name }} - {{ $item->symbol }}</option>
                 @endforeach
@@ -30,7 +29,7 @@
       <br>
       
       <div class="col">
-          <select  class="selectpicker" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
+          <select  class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
             @foreach ($cryptos as $item)
               <option class="form-control" value="{{ $item->symbol }}" selected>{{ $item->name }} - {{ $item->symbol }}</option>
             @endforeach
@@ -48,7 +47,7 @@
           <span  class="blockquote" id="color mb-0" > = </span>
           <div class="col">
       <blockquote class="blockquote">
-          <h2 class="mb-0" id="color" style="margin-left: 20px;"><span id="rezult">0.89</span> <span id="to">EUR</span></h2>
+          <h2 class="mb-0" id="color" style="margin-left: 20px;"><span id="rezult">11738.483</span> <span id="to">LINK</span></h2>
       </blockquote>
           </div>
       </div>

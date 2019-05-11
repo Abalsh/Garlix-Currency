@@ -19,11 +19,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+        
+        
         <!-- Bootstrap select -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        
 
         <!-- Main Custom styles for the website  -->
         <link href="css\main.css" rel="stylesheet">
@@ -33,13 +36,17 @@
         @if(\Request::is('currency'))<link href="css\crypto.css" rel="stylesheet"> @endif
         @if(\Request::is('subscribe')) <link href="css\subscribe.css" rel="stylesheet"> @endif
         @if(\Request::is('crypto')) <script src="{{ URL::to('js/crypto.js') }}"></script> @endif
+
+        
      </head>
   <body class="text-center" background="img\background.jpg">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
+      <a href="/" >
       <i class="material-icons masthead-brand img-fluid">autorenew</i>
       <h3 class="masthead-brand">XCHANGE</h3>
+      </a>
       <nav class="nav nav-masthead justify-content-center">
         <a class="nav-link @if(\Request::is('/')) active @endif" href="/">Home</a>
         <a class="nav-link @if(\Request::is('currency')) active @endif" href='/currency'>Currency</a>

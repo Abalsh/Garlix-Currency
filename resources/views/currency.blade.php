@@ -1,51 +1,53 @@
 @extends('header')
 
 @section('content')
+
   <div class="card">
     <div class="card-body">
         <h3>
-            <small class="text-muted"><span id="color">Currency converter</span></small>
+            <small class="text-muted"><span id="color">Fiat Currency converter</span></small>
         </h3>
       <div class="input-group">
       <br>
       <form id="Form">
         <br>
-        
         <input style="width: 250px;" type="number" placeholder="Enter Amount to Convert" step="0.01" min="0" id="Amount" class="form-control" value="1">
         
         <br>
-        <div class="row" >
+        <div class="row from" >
             <div class="col">
-                <blockquote class="blockquote">
-              <select  class="selectpicker" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
+              <div id="select-from-container">
+              <select name="selValue1" class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="From">
                 @foreach ($currencies as $item)
                   <option  class="form-control" value="{{ $item->iso }}">{{ $item->name }} - {{ $item->iso }}</option>
                 @endforeach
               </select>
-                </blockquote>
             </div>
-      
-      <button type="button" id="swap-button" style="background:none; border:none;"><i class="fa fa-exchange" style="font-size:36px; color: #3C1C78;"></i></button>
+            </div>
+      <button onclick="swapValues();" type="button" id="swap" style="background:none; border:none;"><i class="fa fa-exchange" style="font-size:36px; color: #3C1C78;"></i></button>
 
       <br>
       
-      <div class="col">
-          <select  class="selectpicker" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
+      <div class="col to">
+          <div id="select-from-container">
+          <select name="selValue2" class="selectpicker border" data-show-subtext="true" data-live-search="true" data-size="5" id="To">
             @foreach ($currencies as $item)
               <option class="form-control" value="{{ $item->iso }}" selected>{{ $item->name }} - {{ $item->iso }}</option>
             @endforeach
           </select>
+          </div>
         </div>
       </div>
       <br> <br> 
       </form>
       <div class="row" style="padding-top: 10px;">
           <div class="col">
+            
       <blockquote class="blockquote">
           <h2 class="mb-0" id="color"><span id="amount">1</span> <span id="from">USD</span></h2>
       </blockquote>
           </div>
-          <span  class="blockquote" id="color mb-0" > = </span>
+          <span  class="blockquote" id="mb-0" style="color: black;"> = </span>
           <div class="col">
       <blockquote class="blockquote">
           <h2 class="mb-0" id="color" style="margin-left: 20px;"><span id="rezult">0.89</span> <span id="to">EUR</span></h2>
@@ -76,9 +78,7 @@
     </div>
   </div>
 
-  <script>
-       
-  </script>
+  
 
     {{-- <script>
       function swapValues(){
@@ -125,5 +125,6 @@
  
 
   @include('footer')
+  
   @endsection
  
