@@ -1,110 +1,28 @@
-.card-3 {
-    background: #000;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    display: table;
-  }
-  .card {
-    overflow: hidden;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background: #f8f4ff;
-    width: 720px;
-    height: 550px;  
-    position: relative;
-    margin:0 auto;
-    line-height: 1.4em;
-  }
-
-  .card-3 .card-body {
-    padding: 57px 65px;
-    padding-bottom: 65px;
-    display: table-cell;
-  }
-    /* This is basically to not make the form slightly overlap with the header/footer.*/
-    html {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    
-    * {
-      padding: 0;
-      margin: 0;
-    }
-    
-    *, *:before, *:after {
-      -webkit-box-sizing: inherit;
-      -moz-box-sizing: inherit;
-      box-sizing: inherit;
-    }
-    
-  /* For the look of the form. Removes borders*/
-  input {
-    outline: none;
-    margin: 0;
-    border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    width: 100%;
-    font-size: 14px;
-    font-family: inherit;
-  }
-  
-  /* Spacing between forms*/
-  .input-group {
-    position: relative;
-    margin-bottom: 33px;
-    border-bottom: 1px solid #3C1C78;
-  }
-  
-  /* To make forms transparent */
-  .input--style-3 {
-    padding: 5px 0;
-    font-size: 16px;
+#color{
     color: #3C1C78;
-    background: transparent;
-    border: 1px;
-  }
-  
-  .input--style-3::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
-    color: #3C1C78;
-  }
-  
-  .input--style-3:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #3C1C78;
-    opacity: 1;
-  }
-  
-  @media all and (max-width: 1200px) { /* screen size until 1200px */
-    .paragrap {
-        font-size: 1.5em; /* 1.5x default size */
-    }
 }
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-    .paragrap {
-        font-size: 1.2em; /* 1.2x default size */
-        }
-    }
-@media all and (max-width: 500px) { /* screen size until 500px */
-    .paragrap {
-        font-size: 0.8em; /* 0.8x default size */
-        }
-    }
 
-  .paragraph{
-    text-align: left;
+input{
     color: #3C1C78;
-  }
-  h2{
-    color: #3C1C78;
-  }
+}
+
+.col{
+    width: 250px;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+.card{
+    background-color: #f8f4ff;
+}
+
+.border{
+    border: solid 1px #cccccc;
+}
+
+.up{
+    position: relative;
+    bottom: 10px;
+}

@@ -16,7 +16,9 @@
                                 <p>{{ \Session::get('failure') }}</p>
                             </div><br />
                         @endif
-                    <h2 class="title">Subscribe to our newsletter!</h2>
+                            <h3>
+                                <small class="text-muted"><span id="color">Subscribe to Our Newsletter</span></small>
+                            </h3>
                     <br>
                     @if(count($errors) > 0)
                     <div class="alert alert-danger">
@@ -34,7 +36,7 @@
                     <form action={{url('/subscribe')}}  method="post">
                         @csrf
                         <div class="input-group">
-                            <input class="input--style-3 color" style="background-color #3C1C78;" type="email" placeholder="Email" name="email">
+                            <input class="input--style-3 color" type="email" placeholder="Email" name="email">
                         </div>
                         <div class="btn">
                             <button class="btn btn-primary" style="background-color: #3C1C78; border: none; " type="submit">Submit</button>
