@@ -12,8 +12,7 @@
                     </div>
                 @endif
                 <div class="card-body">
-                  <h2 class="title lead">Contact Us</h2>
-                  <br>
+g
                     <h3>
                         <small class="text-muted"><span id="color">Get in Touch with us!</span></small>
                     </h3>
