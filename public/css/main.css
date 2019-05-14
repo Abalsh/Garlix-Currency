@@ -97,7 +97,7 @@ color: #645394;
       font-size: 16px;
   }
   body{
-    background-image: url("/home/gorilla/Desktop/Garlix/img/responsive-background.jpg");
+    background-image: url("../img/responsive-background.jpg");
   }
   html,
   body {
@@ -118,7 +118,7 @@ color: #645394;
     font-size: 24px;
   }
   body{
-    background-image: url("/home/gorilla/Desktop/Garlix/img/responsive-background.jpg");
+    background-image: url("../img/responsive-background.jpg");
   }
   html,
   body {
