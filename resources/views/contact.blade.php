@@ -14,7 +14,7 @@
             <div class="card-body">
                 <h3> Contact Us</h3>
                 <br>
-                <h2 class="lead title"> Get in-touch with us.</h2>
+                <h2 class="lead title" > Get in-touch with us.</h2>
                 <br>
                 @if(count($errors) > 0)
                     <div class="alert alert-danger">
@@ -48,8 +48,8 @@
                         <div class="input-group">
                             <input id="submit" class="lead" type="submit" name="send" value="Submit">
                         </div>
-
                     </form>
+                    <br>
                 </div>
             </div>
         </div>

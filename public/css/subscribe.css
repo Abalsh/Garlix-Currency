@@ -23,7 +23,7 @@
 }
 
 #form {
-    position: relative;
+    position: c;
     width: auto;
     margin: auto;
 }
@@ -84,7 +84,6 @@ textarea:hover {
     cursor: pointer;
 
     border: solid 1px #3C1C78;
-    border-top: none;
 }
 
 #submit:hover {

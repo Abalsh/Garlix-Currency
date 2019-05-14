@@ -12,7 +12,8 @@
 #form {
   position: relative;
   width: auto;
-  margin: auto;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 
 input {
@@ -54,7 +55,7 @@ textarea {
 
 textarea:hover {
   background: #3C1C78;
-  color: #e2dedb;
+  color: #fff;
 }
 
 #submit {
@@ -75,7 +76,7 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: #e2dedb;
+  color: #fff;
 }
 
 #contact-left {
@@ -86,4 +87,8 @@ textarea:hover {
   .input-group {
     width: 70%;
   }
+}
+
+input:hover::placeholder{
+  color: #fff;
 }
